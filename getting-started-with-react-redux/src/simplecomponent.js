@@ -1,10 +1,10 @@
 import React from 'react';
 
-const simpleComponent = () => {
+const simpleComponent = (props) => {
     return (
         <div>
-            <h1>Getting started with React Redux</h1>
-            <p>This is a web page created with simple react redux</p>
+            <h1>{props.header}</h1>
+            <p>{props.paragraph}</p>
         </div>
     )
 }
